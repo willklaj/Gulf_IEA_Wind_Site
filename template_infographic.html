@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Infographic Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/css/bootstrap.min.css"/> 
+  <link rel="stylesheet" href="https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css"/> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+  <script src='https://d3js.org/d3.v5.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.5/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <h1>Infographic Example</h1>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <div id = "svg1"> </div>
+      </div>
+      <div class="col-md-3">
+        <div id="toc1"></div> 
+      </div>
+    </div>
+  </div>
+
+  <script src='https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js'></script>
+  <script>
+
+    link_svg({
+      svg: 'https://noaa-iea.github.io/fk-esr-info/assets/svg/FKIEA_Ecosystem.svg', 
+      csv: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSAROGVpYB58Zkr8P0iwJdTMRPNLZtJ07IyUn-dQ62C2HMuCEScyl8x7urCD7QbRXQYSIJwDn_wku9G/pub?gid=0&single=true&output=csv', 
+      svg_id: "svg1", 
+      toc_id: "toc1", 
+      modal_url_pfx: 'https://noaa-iea.github.io/fk-esr-info/modals/',
+      toc_style: "sectioned_list"});
+  </script>
+</body>
+</html>

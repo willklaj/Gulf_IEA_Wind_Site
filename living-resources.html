@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Artificial Structures Indicator Page
+-->
+<html>
+	<head>
+    <title>Florida Keys ESR</title>
+    <link rel="shortcut icon" type="image/png" href='NOAAfavicon.ico'/>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://noaa-iea.github.io/plotJS-extra/google-tooltip.css" />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"
+  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/skel.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/util.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/main.js"></script>
+
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1zvpNCi6-Va2pAJO0fFWIhIDska7LkVa0NRk2SZh7bm4/edit#gid=697243976',
+          YAxisTitle: 'Species Richness',
+          targetElement: 'chart1'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1GOMFGRZYWF1kA061IHYiutgFJcPnU2LIkiPUoJ5RDg8/edit#gid=517217035',
+          YAxisTitle: 'Mean effective number of fish species',
+          targetElement: 'chart2'
+        });  
+      });
+  
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1TGGK0K_G_7_ZcS7AJva0TNkrU-nNwfKRhx5NRnp8y_w/edit#gid=399962298',
+          YAxisTitle: 'Average Abundance',
+          targetElement: 'chart3'
+        });  
+      });
+  
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1svt7rZXeEvc13dBg81g3gLlezUxaFHjWN780Q5Qrfbo/edit#gid=1581640865',
+          YAxisTitle: 'Mean Density',
+          targetElement: 'chart4'
+        });  
+      });
+      
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1ih7EmjbK8WrCOBvpFTPEIwA_zlGVgmyx_gZw2Y6nHQM/edit#gid=49603026',
+          YAxisTitle: 'Number of Colonies',
+          targetElement: 'chart5'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1j77SqV3RopdN55zdrH-Ps5fZH28K_jWLAfgudqQWCKQ/edit#gid=332542465',
+          YAxisTitle: 'Mean Density',
+          targetElement: 'chart6'
+        });  
+      });
+    </script>
+
+	</head>
+	<body>
+  	<!-- Page Wrapper -->
+  	<div id="page-wrapper">
+      <!-- Header -->
+    	<header id="header">
+    		<h1><a href="https://noaa-iea.github.io/fk-esr-info/home.html">home</a></h1>
+    		<nav id="nav">
+    			<ul>
+    				<li class="special">
+    					<a href="#menu" class="menuToggle"><span>key indicators</span></a>
+    					<div id="menu">
+    						<ul>
+    							<li><h3>Key Indicators</h3></li>                                            
+    							<li><a href="https://noaa-iea.github.io/fk-esr-info/human-activities.html">Human Activities</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/ecosystem-services.html">Ecosystem Services</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/habitat.html">Habitat</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/living-resources.html">Living Resources</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/sanctuary-waters.html">Sanctuary Waters</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/maritime-archaeological-resources.html">Maritime Archaeological Resources</a></li>
+                  <br>
+                  <br>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/infographic.html"><h1>Ecosystem Infographic</h1></a></li>
+                  <br>
+                  <li><a href="https://doi.org/10.25923/f7ce-st38" target="_blank"><h1>Download the Report</h1></a></li>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/download.html"><h1>Download Data</h1></a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    		</nav>
+    	</header>
+
+      <!-- Main -->
+      <article id="main">
+        <header>
+          <h2>Living Resources</h2>
+          <p></p>
+        </header>
+        <section class="wrapper style5">
+          <div class="inner">  
+          	<h3>Living Resources</h3>
+          	<p>Biodiversity of fish species remained constant. The average abundance  of lionfish per survey site drastically increased as the invasive species spread in 2009. The number and density of coral colonies remained the same. There was an increase followed by a decrease starting in 2017 in the number of colonies of barrel sponges. There was a decrease in the abundance of yellowtail snapper, a decrease followed by a recovery of hogfish, a decrease in abundance of red grouper, and a decrease but large variability in the abundance of black grouper.</p>
+
+            <div>
+              <h3 style = "text-align: center;">Average Coral Species Richness Within and Outside protected zones in FKNMS</h3>
+              <div id="chart1"></div>
+              <p>
+              <h3 style = "text-align: center;">Mean effective number of fish species</h3>
+              <div id="chart2"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Average abundance of lionfish per RVC site</h3>
+              <div id="chart3"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Simpson's Biodiversity Index of Fish Species</h3>
+              <div id="chart4"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Colony count of Xesto sponges in Florida Keys monitoring sites</h3>
+              <div id="chart5"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Stony Coral Density</h3>
+              <div id="chart6"></div>
+            </div> 
+            <br>
+            <br>
+            <h3>Coral Bleaching</h3>                            
+        		<p>The below interactive visualization tools represent changes due to coral bleaching events in the Florida Keys. The site, Cheeca Rocks, in the Middle Keys, is monitored regularly and changes are documented via high resolution photo mosaics. Click the gray circle to show the pre-bleaching event reef in 2014, the reef during the bleaching event in 2015, and post event recovery in 2016.
+                                  
+            <div id="chartslide1" style="width:900px; height:800px">
+              <iframe width=100% height= 100% src="sliders/bleaching_slider.html" frameborder="0" allowfullscreen></iframe>                   
+            </div>
+        
+            Below shows the during the bleaching event in 2015, and post event recovery in 2016.
+            
+            <div id="chartslide2" style="width:900px; height:800px">
+              <iframe width=100% height= 100% src="sliders/bleaching_slider_2.html" frameborder="0" allowfullscreen></iframe>                 
+            </div>
+                                                                                  
+        		<h3>Coral Disease</h3>                            
+        		<p>The below interactive visualization tools represent changes due to the spread of the stony coral tissue loss disease in the Florida Keys. The site, Cheeca Rocks, in the Middle Keys, is monitored regularly and changes are documented via high resolution photo mosaics. Click the gray circle to show the pre-disease spread reef in March 2018, the reef during the disease spread in June 2018, and post disease event in July 2019.
+                                                     
+            <div id="chartslide3" style="width:900px; height:800px;">
+              <iframe width=100% height= 100% src="sliders/disease_slider.html" frameborder="0" allowfullscreen></iframe>                       
+            </div>
+            Below shows during the disease spread in June 2018, and post disease event in July 2019.
+                                        
+            <div id="chartslide4" style="width:900px; height:800px;">
+              <iframe width=100% height= 100% src="sliders/disease_slider_2.html" frameborder="0" allowfullscreen></iframe>                   
+            </div>                             				
+          </div>
+        </section>					
+      </article>
+
+    	<!-- Footer -->
+    	<footer id="footer">
+        <br>
+        <img src="images/NOAA.svg" height="50" >
+        <img src="images/DOC_logo.svg" height="50">
+        <ul class="copyright">
+    			<li>2021  &copy; <a href="https://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a> A Project of the NOAA <a href="https://www.integratedecosystemassessment.noaa.gov" target="_blank">IEA</a> Program </li> 
+    			<br>
+          <a href="https://www.commerce.gov/" target="_blank">U.S. Department of Commerce</a>
+          <br>
+          <br>
+          <h6>PHOTOS FROM THE FKIEA TEAM, THE FLORIDA KEYS NATIONAL MARINE SANCTUARY, AND THE NOAA FLICKR ACCOUNT <a href="https://www.flickr.com/photos/noaaphotolib/">Flickr</a></h6>
+        </ul> 
+        <br/> 
+    	</footer>
+  	</div>
+  </body>
+</html>

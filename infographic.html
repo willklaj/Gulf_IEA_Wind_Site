@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+    <title>Tracking ecosystems and human connections in the Florida Keys</title>
+    <link rel="shortcut icon" type="image/png" href='NOAAfavicon.ico'/>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/skel.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/util.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css"> 
+    <style>.modal-title { color: black; }</style>
+	</head>
+	<body>
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+    <!-- Header -->
+	<header id="header">
+		<h1><a href="https://noaa-iea.github.io/fk-esr-info/home.html">home</a></h1>
+		<nav id="nav">
+			<ul>
+				<li class="special">
+					<a href="#menu" class="menuToggle"><span>key indicators</span></a>
+					<div id="menu">
+						<ul>
+							<li><h3>Key Indicators</h3></li>                                            
+							<li><a href="https://noaa-iea.github.io/fk-esr-info/human-activities.html">Human Activities</a></li>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/ecosystem-services.html">Ecosystem Services</a></li>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/habitat.html">Habitat</a></li>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/living-resources.html">Living Resources</a></li>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/sanctuary-waters.html">Sanctuary Waters</a></li>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/maritime-archaeological-resources.html">Maritime Archaeological Resources</a></li>
+              <br>
+              <br>
+              <br>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/infographic.html"><h1>Ecosystem Infographic</h1></a></li>
+              <br>
+              <li><a href="https://doi.org/10.25923/f7ce-st38" target="_blank"><h1>Download the Report</h1></a></li>
+              <br>
+              <li><a href="https://noaa-iea.github.io/fk-esr-info/download.html"><h1>Download Data</h1></a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+    <article id="main">
+
+      <section class="wrapper style5">
+      <h1 style ="color:black; text-align:center">Tracking ecosystems and human connections in the Florida Keys</h1>
+      <div style ="font-weight: bold; text-align:center">Florida Keys National Marine Sanctuary Ecosystem Tracking Tool</div>
+      <p style ="padding:10px">This interactive graphic allows you to find data used to track the changing conditions of natural resources and levels of human use in the Florida Keys.  Called “indicators,” you can hover over each icon, or click the indicator from the menu on the right to learn more about it and see the data. This is a product of the Florida Keys NOAA Integrated Ecosystem Assessment program.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-9">
+
+              <div id = "svg1"></div>
+
+              <table style ="table-layout: fixed; margin-left: auto;
+                margin-right: auto;">
+                  <tr>
+                    <td style =" background-color: white; text-align: center;">Sanctuary Waters and Human Activities Indicators</td> 
+                    <td style =" background-color: white; text-align: center;">Living Resources and Habitat Indicators</td>
+                    <td style ="background-color: white; text-align: center;">Maritime Heritage and Ecosystem Services Indicators</td> 
+                  </tr>
+              </table>
+              <div style="text-align: right; font-size: 80%"> 
+                <a id="iq_credits" href="">Infographic Credits</a><br>
+		Data is updated on various timelines based on the schedules of each monitoring program.
+              </div>
+
+            </div>
+            <div class="col-md-3">
+              <ul class="panel-group" id="toc1" role="tablist" aria-multiselectable="true"></ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </article>
+
+
+
+  	<!-- Footer -->
+  	<footer id="footer">
+      <br>
+      <img src="images/NOAA.svg" height="50" >
+      <img src="images/DOC_logo.svg" height="50">
+      <ul class="copyright">
+  			<li>2021  &copy; <a href="https://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a> A Project of the NOAA <a href="https://www.integratedecosystemassessment.noaa.gov" target="_blank">IEA</a> Program </li> 
+  			<br>
+        <a href="https://www.commerce.gov/" target="_blank">U.S. Department of Commerce</a>
+        <br>
+        <br>
+        <h6>PHOTOS FROM THE FKIEA TEAM, THE FLORIDA KEYS NATIONAL MARINE SANCTUARY, AND THE NOAA FLICKR ACCOUNT <a href="https://www.flickr.com/photos/noaaphotolib/">Flickr</a></h6>
+      </ul> 
+      <br/> 
+  	</footer>
+	</div>
+
+  <!-- infographiq: run function to link the svg with the svg_list -->
+  <script src='https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js'></script>
+
+  <script>
+    link_svg({
+      svg: 'https://noaa-iea.github.io/fk-esr-info/assets/svg/FKIEA_Ecosystem.svg', 
+      csv: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSAROGVpYB58Zkr8P0iwJdTMRPNLZtJ07IyUn-dQ62C2HMuCEScyl8x7urCD7QbRXQYSIJwDn_wku9G/pub?gid=0&single=true&output=csv', 
+      svg_id: "svg1", 
+      toc_id: "toc1",
+      modal_url_pfx: 'https://noaa-iea.github.io/fk-esr-info/modals/',
+      toc_style: "accordion"});
+      
+      // credits modal
+      // TODO: make this function below in link_svg() standalone so usable like here in simpler functional form.
+      var modal_id = 'modal';
+      var d = {
+        link:  'modals/_credits.html',
+        title: 'Infographic Credits'};
+      $('#iq_credits').click( function(e) {
+        e.preventDefault(); 
+        (function ($) {
+          $('#'+ modal_id).find('iframe')
+            .prop('src', function(){ return d.link });
+          
+          $('#'+ modal_id + '-title').html( d.title );
+          
+          $('#'+ modal_id).on('show.bs.modal', function () {
+            $('.modal-content').css('height',$( window ).height()*0.9);
+            $('.modal-body').css('height','calc(100% - 65px - 55.33px)');
+          });
+          
+          $('#'+ modal_id).modal();
+        }(jQuery));
+        return false; } );
+    
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Artificial Structures Indicator Page
+-->
+<html>
+	<head>
+    <title>Florida Keys ESR</title>
+    <link rel="shortcut icon" type="image/png" href='NOAAfavicon.ico'/>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://noaa-iea.github.io/plotJS-extra/google-tooltip.css" />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"
+  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/skel.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/util.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/main.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1UpEvGMTlA0LL6w6YHkUW1VTNf52xxlMaBCoxVQ9byAY/edit#gid=1077361851',
+          YAxisTitle: 'Total Number of Resources',
+          targetElement: 'chart1'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1wu8EbHfebp0BjgW160WmS2_2R6DKWFkNT4CISKCRGik/edit#gid=150617205',
+          YAxisTitle: 'Number of Participants',
+          targetElement: 'chart2'
+        });  
+      });
+    </script>
+	</head>
+	<body>
+  	<!-- Page Wrapper -->
+  	<div id="page-wrapper">
+      <!-- Header -->
+    	<header id="header">
+    		<h1><a href="https://noaa-iea.github.io/fk-esr-info/home.html">home</a></h1>
+    		<nav id="nav">
+    			<ul>
+    				<li class="special">
+    					<a href="#menu" class="menuToggle"><span>key indicators</span></a>
+    					<div id="menu">
+    						<ul>
+    							<li><h3>Key Indicators</h3></li>                                            
+    							<li><a href="https://noaa-iea.github.io/fk-esr-info/human-activities.html">Human Activities</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/ecosystem-services.html">Ecosystem Services</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/habitat.html">Habitat</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/living-resources.html">Living Resources</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/sanctuary-waters.html">Sanctuary Waters</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/maritime-archaeological-resources.html">Maritime Archaeological Resources</a></li>
+                  <br>
+                  <br>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/infographic.html"><h1>Ecosystem Infographic</h1></a></li>
+                  <br>
+                  <li><a href="https://doi.org/10.25923/f7ce-st38" target="_blank"><h1>Download the Report</h1></a></li>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/download.html"><h1>Download Data</h1></a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    		</nav>
+    	</header>
+      <!-- Main -->
+    	<article id="main">
+      	<header>
+      		<h2>Maritime Archaeological Resources</h2>
+      		<p></p>
+      	</header>
+      	<section class="wrapper style5">
+      		<div class="inner">
+      			<h3>Maritime Archaeological Resources</h3>
+      			<p>Maritime Archaeological Resources in the FKNMS have steadily been added to the National Register of Historic Places, both increasing their protection as well as highlighting their importance as cultural resources. The total number of maritime archaeological sites that have been interpreted for public outreach and education has also risen steadily in the last 30 years and continues to rise. The level of participation per year in maritime archaeological resources stewardship and outreach events has had large variability but has also increased in the last 30 years. </p>
+  
+            <div>
+              <h3 style = "text-align: center;">Total Number of Resources Listed on NHRP</h3>
+              <div id="chart1"></div>
+              <p>
+              <h3 style = "text-align: center;">Total Number of Participants in MAR stewardship events</h3>
+              <div id="chart2"></div>
+            </div>   
+          </div>
+        </section>
+      </article>
+    	<!-- Footer -->
+    	<footer id="footer">
+        <br>
+        <img src="images/NOAA.svg" height="50" >
+        <img src="images/DOC_logo.svg" height="50">
+        <ul class="copyright">
+    			<li>2021  &copy; <a href="https://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a> A Project of the NOAA <a href="https://www.integratedecosystemassessment.noaa.gov" target="_blank">IEA</a> Program </li> 
+    			<br>
+          <a href="https://www.commerce.gov/" target="_blank">U.S. Department of Commerce</a>
+          <br>
+          <br>
+          <h6>PHOTOS FROM THE FKIEA TEAM, THE FLORIDA KEYS NATIONAL MARINE SANCTUARY, AND THE NOAA FLICKR ACCOUNT <a href="https://www.flickr.com/photos/noaaphotolib/">Flickr</a></h6>
+        </ul> 
+        <br/> 
+    	</footer>
+    </div>
+  </body>
+</html>

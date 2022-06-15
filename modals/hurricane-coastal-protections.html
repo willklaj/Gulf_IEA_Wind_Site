@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Value of reef and mangrove coastal protection from storms in Florida Keys</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/CreateModalContent.js"></script>
+    <link rel="stylesheet" href="https://marinebon.org/infographiqJS/libs/infographiq_v1.0/infographiq.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <script>
+        var Google_Spreadsheet_Link = 
+          'https://docs.google.com/spreadsheets/d/1Mc2_Rls4XgY8QQ_xY7ZVVVWdWWhTWvh94FHDr0l2f7Q/edit#gid=348646580';
+
+      google.charts.load('current', {packages: ['corechart']});
+      google.charts.setOnLoadCallback(drawGID);
+      google.charts.setOnLoadCallback(function() {
+        var DataSourceURL = "https://docs.google.com/spreadsheets/d/1_o8HOiZ_35uajupEsw6xLSsneTBTeLh0bqvFQvMpBNY/gviz/tq?gid=0&headers=1";
+        var url = window.location.pathname;
+        var icon = url.substring(url.lastIndexOf('/')+1, url.lastIndexOf('.'));
+        createFKContent(DataSourceURL, icon);
+      }); 
+
+      function drawGID() {
+        var query = new google.visualization.Query(Google_Spreadsheet_Link);
+        query.send(handleQueryResponse);
+      }
+      
+      function handleQueryResponse(response) {
+
+        if (response.isError()) {
+          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+          return;
+        }
+
+        var data = response.getDataTable();
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div1'));
+        var options = {
+          tooltip: {textStyle: {fontSize: 15}},
+          animation: {startup: true, duration:700},
+          chartArea: {top: 10, height: '80%'},
+          legend: 'none',
+          hAxis: { 
+            title: "Storm Frequency", 
+            titleTextStyle: {bold: true, italic: false}}, 
+          vAxis: {  // options for the Y Axis
+          title: "Economic activity protected by Florida Keys coral reefs (2010 dollars)",
+          titleTextStyle: {bold: true, italic: false }, // Set how the Y Axis title looks
+          minorGridlines: {color: 'transparent'}}
+        };
+
+        chart.draw(data, options);
+      }
+      
+    </script>
+    
+  </head>
+  <body>
+    <div class = "caption_text">
+      <h3 style = "text-align: center;"><span id="title"></span></h3>
+      <div id="chart_div1" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+      <span id="caption"></span> Source: <span id="source"></span>
+    </div>
+  </body>
+</html>

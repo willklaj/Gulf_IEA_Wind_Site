@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Harmful Algal Blooms Red Tide Current Status</title>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+	    <script>
+	      window.dataLayer = window.dataLayer || [];
+	      function gtag(){dataLayer.push(arguments);}
+	      gtag('js', new Date());
+	      gtag('config', 'UA-176398491-1');
+	    </script>
+	    
+	    <script src="https://www.gstatic.com/charts/loader.js"></script>
+	    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+	    <script src="https://noaa-iea.github.io/plotJS-extra/CreateModalContent.js"></script>
+	    <link rel="stylesheet" href="https://marinebon.org/infographiqJS/libs/infographiq_v1.0/infographiq.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />	
+      
+	    <script>
+	      google.charts.load('current', {packages: ['corechart']});
+
+	      google.charts.setOnLoadCallback(function() {
+	        var DataSourceURL = "https://docs.google.com/spreadsheets/d/1_o8HOiZ_35uajupEsw6xLSsneTBTeLh0bqvFQvMpBNY/gviz/tq?gid=0&headers=1";
+	        var url = window.location.pathname;
+	        var icon = url.substring(url.lastIndexOf('/')+1, url.lastIndexOf('.'));
+	        createFKContent(DataSourceURL, icon);
+	      });
+	    </script>
+	</head>
+  	<body>
+    	<div class = "caption_text">
+      		<h3 style = "text-align: center;"><span id="title"></span></h3>
+			<iframe src="https://myfwc.maps.arcgis.com/apps/View/index.html?appid=87162eec3eb846218cec711d16462a72" title="Harmful Algal Blooms Red Tide Current Status"  width="100%" height="600" ></iframe><br>
+			<span id="caption"></span> Source: <span id="source"></span>
+		</div>
+	</body>
+</html>

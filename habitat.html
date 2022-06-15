@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Artificial Structures Indicator Page
+-->
+<html>
+	<head>
+    <title>Florida Keys ESR</title>
+    <link rel="shortcut icon" type="image/png" href='NOAAfavicon.ico'/>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://noaa-iea.github.io/plotJS-extra/google-tooltip.css" />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+			<script src="https://code.jquery.com/jquery-1.9.1.min.js"
+  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/skel.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/util.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/main.js"></script>
+
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1zvpNCi6-Va2pAJO0fFWIhIDska7LkVa0NRk2SZh7bm4/edit#gid=697243976',
+          YAxisTitle: 'Species Richness',
+          targetElement: 'chart1'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1pouebRKHGKyUFdmtw8QKexY7JceJOyVoETKRbE4q2h8/edit#gid=376679084',
+          YAxisTitle: 'Hard Coral Carbonate Production',
+          targetElement: 'chart2',
+          twoYAxes: true,
+          YAxisTitle2: "Secondary Carbonate Production"
+        });  
+      });
+  
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/13ikK9kUGHB1w48MDxE-LlayHuhnNEMMke6jc2mOVfXU/edit#gid=373524529',
+          YAxisTitle: 'Average Live Tissue Area (cm)',
+          targetElement: 'chart3'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1zzdbZ1qou8S2HzRNsi9fPqo2rmwQ0RB0y5oiJTkgZq0/edit#gid=204211971',
+          YAxisTitle: 'Mean Density',
+          targetElement: 'chart4'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1-TA6LdRybxs98CRTjtjeS3PBHKYBjTg1sPut7ZDIgAw/edit#gid=609509037',
+          YAxisTitle: 'Total Seagrass Abundance (All Species)',
+          targetElement: 'chart5'
+        });  
+      });
+    </script>
+
+	</head>
+	<body>
+
+  	<!-- Page Wrapper -->
+  	<div id="page-wrapper">
+      <!-- Header -->
+    	<header id="header">
+    		<h1><a href="https://noaa-iea.github.io/fk-esr-info/home.html">home</a></h1>
+    		<nav id="nav">
+    			<ul>
+    				<li class="special">
+    					<a href="#menu" class="menuToggle"><span>key indicators</span></a>
+    					<div id="menu">
+    						<ul>
+    							<li><h3>Key Indicators</h3></li>                                            
+    							<li><a href="https://noaa-iea.github.io/fk-esr-info/human-activities.html">Human Activities</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/ecosystem-services.html">Ecosystem Services</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/habitat.html">Habitat</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/living-resources.html">Living Resources</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/sanctuary-waters.html">Sanctuary Waters</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/maritime-archaeological-resources.html">Maritime Archaeological Resources</a></li>
+                  <br>
+                  <br>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/infographic.html"><h1>Ecosystem Infographic</h1></a></li>
+                  <br>
+                  <li><a href="https://doi.org/10.25923/f7ce-st38" target="_blank"><h1>Download the Report</h1></a></li>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/download.html"><h1>Download Data</h1></a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    		</nav>
+    	</header>
+
+      <!-- Main -->
+      <article id="main">
+        <header>
+          <h2>Habitat</h2>
+          <p>Mangroves, Seagrass, Hardbottom and Coral Reefs</p>
+        </header>
+        <section class="wrapper style5">
+          <div class="inner">    
+            <h3>Habitat</h3>
+            <p>Coral species richness has declined in recurring monitoring sites throughout the Keys by ~5 species. Average stony coral live tissue area per survey site has also declined in the past 9 years. However, the average density of non-reef building octocoral per site has slightly increased in the past 10 years. Average seagrass abundance in all species has seen variability between years due to die-off events, but is currently in a period of continued decline since 2014. Coral resilience to events such as bleaching and disease has been seen at some patch reefs- specifically Cheeca Rocks, illustrated here. </p>      
+            <div>
+              <h3 style = "text-align: center;">Average Coral Species Richness</h3>
+              <div id="chart1"></div>
+              <p>
+              <h3 style = "text-align: center;">Carbonate Production</h3>
+              <div id="chart2"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Stony Coral Live Tissue Area</h3>
+              <div id="chart3"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Mean Octocoral Density</h3>
+              <div id="chart4"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Total Seagrass Abundance (All Species)</h3>
+              <div id="chart5"></div>
+            </div>  
+          </div>                                                             
+        </section>
+      </article>
+
+    	<!-- Footer -->
+    	<footer id="footer">
+        <br>
+        <img src="images/NOAA.svg" height="50" >
+        <img src="images/DOC_logo.svg" height="50">
+        <ul class="copyright">
+    			<li>2021  &copy; <a href="https://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a> A Project of the NOAA <a href="https://www.integratedecosystemassessment.noaa.gov" target="_blank">IEA</a> Program </li> 
+    			<br>
+          <a href="https://www.commerce.gov/" target="_blank">U.S. Department of Commerce</a>
+          <br>
+          <br>
+          <h6>PHOTOS FROM THE FKIEA TEAM, THE FLORIDA KEYS NATIONAL MARINE SANCTUARY, AND THE NOAA FLICKR ACCOUNT <a href="https://www.flickr.com/photos/noaaphotolib/">Flickr</a></h6>
+        </ul> 
+        <br/> 
+    	</footer>
+  	</div>
+  </body>
+</html>

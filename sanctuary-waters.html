@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Artificial Structures Indicator Page
+-->
+<html>
+	<head>
+    	<title>Florida Keys ESR</title>
+        <link rel="shortcut icon" type="image/png" href='NOAAfavicon.ico'/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176398491-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176398491-1');
+    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://noaa-iea.github.io/plotJS-extra/google-tooltip.css" />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"
+  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrollex.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/jquery.scrolly.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/skel.min.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/util.js"></script>
+    <script src="https://noaa-iea.github.io/fk-esr-info/assets/js/main.js"></script>
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1A8BYx8D0MhJY227qVGYWDiK5fe0plcAU6QDJah9csg8/edit#gid=365283163',
+          YAxisTitle: 'Temperature (Celsius)',
+          SST: true,
+          targetElement: 'chart1'
+        });  
+      });
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1mJzeqy8E9tvjBLZnI-9vraV3unTCOgHg6StLlVZKj2A/edit#gid=1391741389',
+          YAxisTitle: 'Average Chl-a Level (mg/L)',
+          targetElement: 'chart2'
+        });  
+      });
+  
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1EGz5rEIOZZ84OSEOriDENUK0YPSG1ApxepJNKVAQEzU/edit#gid=1525589878',
+          YAxisTitle: 'Number of advisories for public beaches',
+          targetElement: 'chart3'
+        });  
+      });
+    </script>
+
+	</head>
+	<body>
+  	<!-- Page Wrapper -->
+  	<div id="page-wrapper">
+      <!-- Header -->
+    	<header id="header">
+    		<h1><a href="https://noaa-iea.github.io/fk-esr-info/home.html">home</a></h1>
+    		<nav id="nav">
+    			<ul>
+    				<li class="special">
+    					<a href="#menu" class="menuToggle"><span>key indicators</span></a>
+    					<div id="menu">
+    						<ul>
+    							<li><h3>Key Indicators</h3></li>                                            
+    							<li><a href="https://noaa-iea.github.io/fk-esr-info/human-activities.html">Human Activities</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/ecosystem-services.html">Ecosystem Services</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/habitat.html">Habitat</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/living-resources.html">Living Resources</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/sanctuary-waters.html">Sanctuary Waters</a></li>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/maritime-archaeological-resources.html">Maritime Archaeological Resources</a></li>
+                  <br>
+                  <br>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/infographic.html"><h1>Ecosystem Infographic</h1></a></li>
+                  <br>
+                  <li><a href="https://doi.org/10.25923/f7ce-st38" target="_blank"><h1>Download the Report</h1></a></li>
+                  <br>
+                  <li><a href="https://noaa-iea.github.io/fk-esr-info/download.html"><h1>Download Data</h1></a></li>
+    						</ul>
+    					</div>
+    				</li>
+    			</ul>
+    		</nav>
+    	</header>
+
+    	<!-- Main -->
+    	<article id="main">
+    		<header>
+    			<h2>Sanctuary Waters</h2>
+    			<p>state of sanctuary waters</p>
+    		</header>
+    		<section class="wrapper style5">
+    			<div class="inner">
+    				<h3>Sanctuary Waters</h3>
+    				<p>There has been a reduction in the number of fecal indicator presence related beach advisories issued since 2005. Both the minimum and maximum sea surface temperatures have risen at least a degree (celsius) since 1985. Nutrient level has varied, likely due to weather events, over the last 20 years, but have not significantly changed. There has been high variability, but the average chlorophyll a concentration, a measure of water column productivity and presence of phytoplankton, has risen in the last 5 years.</p>
+                                                    
+    				<p>The below interactive data visualization tool shows dissolved inorganic phosphorus (PO4), taken in bimonthly research cruises from 2009 through 2019. Click the grey circle to slide the graphic to see change in coastal regions sampled in 2009 and in 2019.</p>
+                                                                                                                                           
+            <div id="chartslide" style="width:100%; height:800px;">
+                <iframe width=100% height= 100% src="sliders/P04_slider.html" frameborder="0" allowfullscreen></iframe> 
+            </div>
+                    
+            <div>
+              <h3 style = "text-align: center;">Sea Surface Temperature (SST)</h3>
+              <div id="chart1"></div>
+              <p>
+              <h3 style = "text-align: center;">Average chl a levels on reef tract sites per year</h3>
+              <div id="chart2"></div>
+              <p>                       
+              <h3 style = "text-align: center;">Number of fecal indicator related advisories issued in the Keys</h3>
+              <div id="chart3"></div>
+            </div> 
+          </div>                   
+        </section>
+      </article>
+
+      <!-- Footer -->
+      <footer id="footer">
+          <br>
+          <img src="images/NOAA.svg" height="50" >
+          <img src="images/DOC_logo.svg" height="50">
+          <ul class="copyright">
+                  <li>2021  &copy; <a href="https://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a> A Project of the NOAA <a href="https://www.integratedecosystemassessment.noaa.gov" target="_blank">IEA</a> Program </li> 
+                  <br>
+            <a href="https://www.commerce.gov/" target="_blank">U.S. Department of Commerce</a>
+            <br>
+            <br>
+            <h6>PHOTOS FROM THE FKIEA TEAM, THE FLORIDA KEYS NATIONAL MARINE SANCTUARY, AND THE NOAA FLICKR ACCOUNT <a href="https://www.flickr.com/photos/noaaphotolib/">Flickr</a></h6>
+          </ul> 
+          <br/> 
+      </footer>
+    </div>
+  </body>
+</html>

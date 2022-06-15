@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+    <title>Template Page</title>
+    <meta charset="utf-8" />
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://noaa-iea.github.io/plotJS-extra/GoogleChartsWrapper.js"></script>
+
+    <script>
+      google.charts.load('current', {packages: ['corechart']});
+
+      google.charts.setOnLoadCallback(function() {
+        GraphWrapper({
+          Google_Spreadsheet_Link: 'https://docs.google.com/spreadsheets/d/1UVf5BjSu0VoOIDuiYLDansze-gZhcFAAaXiY3SAd4BA/edit#gid=373868952',
+          YAxisTitle: 'Cruise Passenger Visits',
+          threshold_year: 2011,
+          targetElement: 'chart1',
+          YAxisTitle2: '', 
+          twoYAxes: false, 
+          SST: false
+        });  
+      });
+  </script>
+
+	</head>
+	<body>
+
+    <div>
+      <h3 style = "text-align: center;">Cruise Passenger Visits to Key West</h3>
+      <div id="chart1"></div>
+    </div>
+                           
+  </body>
+</html>
